@@ -1,0 +1,17 @@
+strings:
+  - inputs: CommonPresentation/Sources/CommonPresentation/Resources/Localizable.strings
+    outputs:
+      templateName: structured-swift5
+      output: CommonPresentation/Sources/CommonPresentation/Generated/Strings.swift
+      params:
+        publicAccess: true
+
+xcassets:
+  - inputs: 
+    - CommonPresentation/Sources/CommonPresentation/Resources/Assets.xcassets
+    outputs:
+      templateName: swift5
+      output: CommonPresentation/Sources/CommonPresentation/Generated/Assets.swift
+      params:
+        publicAccess: true
+

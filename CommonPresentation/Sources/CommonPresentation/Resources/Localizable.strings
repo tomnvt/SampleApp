@@ -1,0 +1,28 @@
+"onboarding.page1.title" = "First onboarding page";
+"onboarding.page1.message" = "First onboarding page";
+"onboarding.page2.title" = "Second onboarding page";
+"onboarding.page2.message" = "This is the second onboarding page! And some more text";
+"onboarding.page3.title" = "Third onboarding page";
+"onboarding.page3.message" = "This is the third onboarding page! And some even more and more and more text";
+"onboarding.page4.title" = "Fourth onboarding page";
+"onboarding.page4.message" = "This is the fourth onboarding page! And some even more and more and more and moreeeeeee text";
+"onboarding.page5.title" = "Fifth onboarding page";
+"onboarding.page5.message" = "This is the fifth onboarding page! Not much text in here indeed";
+
+"general.email" = "E-mail";
+"general.password" = "Password";
+"general.signIn" = "Sign in";
+"general.forgottenPassword" = "Forgotten password";
+"general.enterEmail" = "Enter your e-mail";
+
+"list.addItem" = "Add item";
+"list.delete" = "Delete";
+"list.detailText" = "This is a detail for %@";
+
+"list.detailText" = "This is a detail for %@";
+"list.detailText" = "This is a detail for %@";
+
+"alert.general.error" = "Error";
+"alert.general.errorMessage" = "The following error has occured: %@";
+"alert.general.cancel" = "Cancel";
+"alert.general.retry" = "Retry";

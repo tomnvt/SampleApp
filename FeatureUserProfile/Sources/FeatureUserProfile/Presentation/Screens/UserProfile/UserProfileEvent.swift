@@ -1,0 +1,3 @@
+enum UserProfileEvent {
+    case userDidLogOut
+}
