@@ -1,13 +1,13 @@
-import CommonData
-import CommonPresentation
 import Utils
 import UIKit
 import SwiftUI
 
 public struct FeatureExampleManager {
+    private let dependencies: FeatureExampleDependencies
     private let navigationController: UINavigationController
 
-    public init(navigationController: UINavigationController) {
+    public init(dependencies: FeatureExampleDependencies, navigationController: UINavigationController) {
+        self.dependencies = dependencies
         self.navigationController = navigationController
     }
 
@@ -16,9 +16,7 @@ public struct FeatureExampleManager {
             viewModel: BasicListViewModel(
                 eventdelegate: self,
                 interactor: Interactor(
-                    repository: Repository(
-                        dataSource: CoreDataDataSource.shared
-                    )
+                    repository: Repository(dataSource: dependencies.coreDataDataSource)
                 )
             )
         )

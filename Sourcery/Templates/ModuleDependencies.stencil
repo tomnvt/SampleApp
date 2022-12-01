@@ -1,0 +1,15 @@
+{% for type in types.all where type|annotated:"ModuleDependencies" %}
+import {{ type.name|replace:"Dependencies","" }} 
+
+extension AppDependencies {
+    var {{ type.name|lowerFirstLetter }}: {{ type.name }} {
+        {{ type.name }}(
+            {% for variable in type.storedVariables %}
+            {{ variable.name }}: {{ variable.name }}{% if not forloop.last %},{% endif %}
+            {% endfor %}
+        )
+    }
+}
+
+
+{% endfor %}

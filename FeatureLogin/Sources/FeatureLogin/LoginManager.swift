@@ -1,13 +1,13 @@
-import CommonData
-import CommonDomain
 import UIKit
 import SwiftUI
 
 public struct LoginManager {
+    private let dependencies: FeatureLoginDependencies
     private let navigationController: UINavigationController
     private let delegate: LoginDelegate
 
-    public init(navigationController: UINavigationController, delegate: LoginDelegate) {
+    public init(dependencies: FeatureLoginDependencies, navigationController: UINavigationController, delegate: LoginDelegate) {
+        self.dependencies = dependencies
         self.navigationController = navigationController
         self.delegate = delegate
     }
@@ -15,10 +15,7 @@ public struct LoginManager {
     public func start() {
         let view = EmailLoginView(
             viewModel: EmailLoginViewModel(
-                loginInteractor: LoginInteractor(
-                    loginRepository: LoginRepository.shared,
-                    userRepository: UserRepository.shared
-                ),
+                loginInteractor: dependencies.loginInteractor,
                 onEvent: handleEmailLoginEvent
             )
         )
@@ -33,10 +30,7 @@ public struct LoginManager {
     func getEmailLoginView() -> EmailLoginView {
         return EmailLoginView(
             viewModel: EmailLoginViewModel(
-                loginInteractor: LoginInteractor(
-                    loginRepository: LoginRepository.shared,
-                    userRepository: UserRepository.shared
-                ),
+                loginInteractor: dependencies.loginInteractor,
                 onEvent: handleEmailLoginEvent
             )
         )
@@ -62,10 +56,7 @@ public struct LoginManager {
         let view = ForgottenPasswordView(
             viewModel: ForgottenPasswordViewModel(
                 onEvent: handleForgottenPasswordEvent,
-                loginInteractor: LoginInteractor(
-                    loginRepository: LoginRepository.shared,
-                    userRepository: UserRepository.shared
-                )
+                loginInteractor: dependencies.loginInteractor
             )
         )
         navigationController.pushView(view)

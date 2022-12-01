@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		BB21E9D52938ACB600EDEDFA /* CommonData in Frameworks */ = {isa = PBXBuildFile; productRef = BB21E9D42938ACB600EDEDFA /* CommonData */; };
 		BB21E9D72938ACBA00EDEDFA /* Utils in Frameworks */ = {isa = PBXBuildFile; productRef = BB21E9D62938ACBA00EDEDFA /* Utils */; };
+		BB21E9DA2938DE7400EDEDFA /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB21E9D92938DE7400EDEDFA /* AppDependencies.swift */; };
+		BB21E9E32939092A00EDEDFA /* ModuleDependencies.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB21E9E22939092A00EDEDFA /* ModuleDependencies.generated.swift */; };
 		BB228327290843140065C980 /* FeatureExample in Frameworks */ = {isa = PBXBuildFile; productRef = BB228326290843140065C980 /* FeatureExample */; };
 		BB4F0DB02906D62000252E50 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4F0DAF2906D62000252E50 /* TabBarController.swift */; };
 		BB947E052907E16500A57B65 /* FeatureOnboarding in Frameworks */ = {isa = PBXBuildFile; productRef = BB947E042907E16500A57B65 /* FeatureOnboarding */; };
@@ -28,6 +30,8 @@
 
 /* Begin PBXFileReference section */
 		BB21E9D32938A46D00EDEDFA /* Utils */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Utils; sourceTree = "<group>"; };
+		BB21E9D92938DE7400EDEDFA /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
+		BB21E9E22939092A00EDEDFA /* ModuleDependencies.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleDependencies.generated.swift; sourceTree = "<group>"; };
 		BB228325290840510065C980 /* FeatureExample */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FeatureExample; sourceTree = "<group>"; };
 		BB4F0DAC2906B2D900252E50 /* CommonData */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CommonData; sourceTree = "<group>"; };
 		BB4F0DAD2906B2DC00252E50 /* CommonDomain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CommonDomain; sourceTree = "<group>"; };
@@ -66,6 +70,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB21E9DB2938E6EF00EDEDFA /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				BB21E9D92938DE7400EDEDFA /* AppDependencies.swift */,
+				BB21E9E22939092A00EDEDFA /* ModuleDependencies.generated.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
 		BB3B664D2938991200BD203D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +116,7 @@
 		BBADE3662902846B00E8AC86 /* TemplateApp */ = {
 			isa = PBXGroup;
 			children = (
+				BB21E9DB2938E6EF00EDEDFA /* Dependencies */,
 				BB95B0E82903083D00506578 /* MainRouter.swift */,
 				BBADE3672902846B00E8AC86 /* AppDelegate.swift */,
 				BB4F0DAF2906D62000252E50 /* TabBarController.swift */,
@@ -137,6 +151,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BBADE3722902846C00E8AC86 /* Build configuration list for PBXNativeTarget "TemplateApp" */;
 			buildPhases = (
+				BB21E9E429390CDA00EDEDFA /* Sourcery */,
 				BBADE3602902846B00E8AC86 /* Sources */,
 				BBADE3612902846B00E8AC86 /* Frameworks */,
 				BBADE3622902846B00E8AC86 /* Resources */,
@@ -206,12 +221,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BB21E9E429390CDA00EDEDFA /* Sourcery */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Sourcery;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh scripts/run_sourcery.sh\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BBADE3602902846B00E8AC86 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB21E9DA2938DE7400EDEDFA /* AppDependencies.swift in Sources */,
 				BB4F0DB02906D62000252E50 /* TabBarController.swift in Sources */,
+				BB21E9E32939092A00EDEDFA /* ModuleDependencies.generated.swift in Sources */,
 				BB947E072907E5A600A57B65 /* MainRouter+OnboardingDelegate.swift in Sources */,
 				BBADE3682902846B00E8AC86 /* AppDelegate.swift in Sources */,
 				BBC59550290826B300BFB955 /* MainRouter+UserProfileDelegate.swift in Sources */,

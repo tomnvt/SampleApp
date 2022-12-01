@@ -1,13 +1,12 @@
-import CommonData
-import CommonDomain
-import CommonPresentation
 import UIKit
 
 public struct UserProfileManager {
+    private let dependencies: FeatureUserProfileDependencies
     private let navigationController: UINavigationController
     private let delegate: UserProfileDelegate
 
-    public init(navigationController: UINavigationController, delegate: UserProfileDelegate) {
+    public init(dependencies: FeatureUserProfileDependencies, navigationController: UINavigationController, delegate: UserProfileDelegate) {
+        self.dependencies = dependencies
         self.navigationController = navigationController
         self.delegate = delegate
     }
@@ -15,11 +14,8 @@ public struct UserProfileManager {
     public func start() {
         let view = UserProfileView(
             viewModel: UserProfileViewModel(
-                userRepository: UserRepository.shared,
-                loginInteractor: LoginInteractor(
-                    loginRepository: LoginRepository.shared,
-                    userRepository: UserRepository.shared
-                ),
+                userRepository: dependencies.userRepository,
+                loginInteractor: dependencies.loginInteractor,
                 onEvent: handleUserProfileEvent
             )
         )

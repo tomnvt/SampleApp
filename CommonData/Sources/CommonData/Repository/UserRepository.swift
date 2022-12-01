@@ -1,10 +1,13 @@
 import CommonDomain
 
 public class UserRepository {
-    let userDefaultsDataSource = UserDefaultsDataSource.shared
-    let keychainDataSource = KeychainDataSource.shared
+    let userDefaultsDataSource: UserDefaultsDataSource
+    let keychainDataSource: KeychainDataSource
 
-    public static let shared = UserRepository()
+    public init(userDefaultsDataSource: UserDefaultsDataSource, keychainDataSource: KeychainDataSource) {
+        self.userDefaultsDataSource = userDefaultsDataSource
+        self.keychainDataSource = keychainDataSource
+    }
 }
 
 extension UserRepository: UserRepositoryProtocol {

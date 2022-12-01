@@ -4,6 +4,7 @@ import SwiftUI
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
+    let dependencies = AppDependencies()
 
     func application(
         _ application: UIApplication,
@@ -16,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navigationController = UINavigationController()
         let window = UIWindow(windowScene: windowScene)
         let mainRouter = MainRouter(
+            dependencies: dependencies,
             mainNavigationController: navigationController
         )
 
