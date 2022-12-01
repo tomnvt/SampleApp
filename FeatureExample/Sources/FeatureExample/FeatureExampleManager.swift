@@ -1,5 +1,6 @@
 import CommonData
 import CommonPresentation
+import Utils
 import UIKit
 import SwiftUI
 
@@ -29,6 +30,7 @@ extension FeatureExampleManager: BasicListEventHandler {
     func handleEvent(_ event: BasicListEvent) {
         switch event {
         case .itemSelected(let model):
+            AnalyticsLogger.logEvent(.itemSelected(id: model.id, name: model.property))
             showDetail(for: model)
         }
     }

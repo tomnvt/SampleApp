@@ -5,7 +5,7 @@ struct OnboardingView: View {
 
     // MARK: - Types
     enum Event {
-        case skipButtonTapped
+        case skipButtonTapped(pageNumber: Int)
         case startButtonTapped
     }
 
@@ -84,7 +84,7 @@ private extension OnboardingView {
             }
             Spacer()
             Button(action: {
-                onEvent(.skipButtonTapped)
+                onEvent(.skipButtonTapped(pageNumber: currentPage))
             }, label: {
                 Text("Skip")
             })

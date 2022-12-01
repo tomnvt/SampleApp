@@ -1,3 +1,4 @@
+import Firebase
 import SwiftUI
 
 @main
@@ -9,6 +10,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
         guard let windowScene = (application.connectedScenes.first as? UIWindowScene) else { return true }
+
+        FirebaseApp.configure()
 
         let navigationController = UINavigationController()
         let window = UIWindow(windowScene: windowScene)

@@ -4,33 +4,23 @@
 import PackageDescription
 
 let package = Package(
-    name: "FeatureOnboarding",
-    platforms: [.iOS(.v15)],
+    name: "Utils",
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "FeatureOnboarding",
-            targets: ["FeatureOnboarding"]),
+            name: "Utils",
+            targets: ["Utils"]),
     ],
     dependencies: [
-        .package(path: "../CommonData"),
-        .package(path: "../CommonDomain"),
-        .package(path: "../CommonPresentation"),
-        .package(path: "../Utils"),
+        .package(url: "https://github.com/firebase/firebase-ios-sdk.git", branch: "master")
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
-            name: "FeatureOnboarding",
+            name: "Utils",
             dependencies: [
-                "CommonData",
-                "CommonDomain",
-                "CommonPresentation",
-                "Utils",
-            ]),
-        .testTarget(
-            name: "FeatureOnboardingTests",
-            dependencies: ["FeatureOnboarding"]),
+                .product(name: "FirebaseAnalytics", package: "firebase-ios-sdk"),
+            ])
     ]
 )

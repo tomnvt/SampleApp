@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB21E9D52938ACB600EDEDFA /* CommonData in Frameworks */ = {isa = PBXBuildFile; productRef = BB21E9D42938ACB600EDEDFA /* CommonData */; };
+		BB21E9D72938ACBA00EDEDFA /* Utils in Frameworks */ = {isa = PBXBuildFile; productRef = BB21E9D62938ACBA00EDEDFA /* Utils */; };
 		BB228327290843140065C980 /* FeatureExample in Frameworks */ = {isa = PBXBuildFile; productRef = BB228326290843140065C980 /* FeatureExample */; };
 		BB4F0DB02906D62000252E50 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4F0DAF2906D62000252E50 /* TabBarController.swift */; };
 		BB947E052907E16500A57B65 /* FeatureOnboarding in Frameworks */ = {isa = PBXBuildFile; productRef = BB947E042907E16500A57B65 /* FeatureOnboarding */; };
@@ -14,14 +16,18 @@
 		BB947E092907EF5200A57B65 /* FeatureLogin in Frameworks */ = {isa = PBXBuildFile; productRef = BB947E082907EF5200A57B65 /* FeatureLogin */; };
 		BB947E0B2907F10200A57B65 /* MainRouter+LoginDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB947E0A2907F10200A57B65 /* MainRouter+LoginDelegate.swift */; };
 		BB95B0E92903083D00506578 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB95B0E82903083D00506578 /* MainRouter.swift */; };
+		BB9AC8A1292F6CB9006F8CB6 /* CommonDomain in Frameworks */ = {isa = PBXBuildFile; productRef = BB9AC8A0292F6CB9006F8CB6 /* CommonDomain */; };
+		BB9AC8A3292F6CB9006F8CB6 /* CommonPresentation in Frameworks */ = {isa = PBXBuildFile; productRef = BB9AC8A2292F6CB9006F8CB6 /* CommonPresentation */; };
 		BBADE3682902846B00E8AC86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBADE3672902846B00E8AC86 /* AppDelegate.swift */; };
 		BBADE36C2902846C00E8AC86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBADE36B2902846C00E8AC86 /* Assets.xcassets */; };
 		BBADE36F2902846C00E8AC86 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBADE36E2902846C00E8AC86 /* Preview Assets.xcassets */; };
 		BBC5954E2908235300BFB955 /* FeatureUserProfile in Frameworks */ = {isa = PBXBuildFile; productRef = BBC5954D2908235300BFB955 /* FeatureUserProfile */; };
 		BBC59550290826B300BFB955 /* MainRouter+UserProfileDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC5954F290826B300BFB955 /* MainRouter+UserProfileDelegate.swift */; };
+		BBD9A9D3292F6E2B00112C36 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BBD9A9D2292F6E2B00112C36 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB21E9D32938A46D00EDEDFA /* Utils */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Utils; sourceTree = "<group>"; };
 		BB228325290840510065C980 /* FeatureExample */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FeatureExample; sourceTree = "<group>"; };
 		BB4F0DAC2906B2D900252E50 /* CommonData */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CommonData; sourceTree = "<group>"; };
 		BB4F0DAD2906B2DC00252E50 /* CommonDomain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CommonDomain; sourceTree = "<group>"; };
@@ -37,6 +43,7 @@
 		BBADE36E2902846C00E8AC86 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BBC5954C290817F300BFB955 /* FeatureUserProfile */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FeatureUserProfile; sourceTree = "<group>"; };
 		BBC5954F290826B300BFB955 /* MainRouter+UserProfileDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainRouter+UserProfileDelegate.swift"; sourceTree = "<group>"; };
+		BBD9A9D2292F6E2B00112C36 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BBDDE8132907E07B00A323C2 /* FeatureLogin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FeatureLogin; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -45,19 +52,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB21E9D72938ACBA00EDEDFA /* Utils in Frameworks */,
 				BB947E052907E16500A57B65 /* FeatureOnboarding in Frameworks */,
 				BBC5954E2908235300BFB955 /* FeatureUserProfile in Frameworks */,
+				BB9AC8A3292F6CB9006F8CB6 /* CommonPresentation in Frameworks */,
 				BB228327290843140065C980 /* FeatureExample in Frameworks */,
 				BB947E092907EF5200A57B65 /* FeatureLogin in Frameworks */,
+				BB21E9D52938ACB600EDEDFA /* CommonData in Frameworks */,
+				BB9AC8A1292F6CB9006F8CB6 /* CommonDomain in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB3B664D2938991200BD203D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BBD9A9D2292F6E2B00112C36 /* GoogleService-Info.plist */,
+				BBADE36B2902846C00E8AC86 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		BBADE35B2902846B00E8AC86 = {
 			isa = PBXGroup;
 			children = (
+				BB21E9D32938A46D00EDEDFA /* Utils */,
 				BB4F0DAC2906B2D900252E50 /* CommonData */,
 				BB4F0DAD2906B2DC00252E50 /* CommonDomain */,
 				BB4F0DAE2906B2DF00252E50 /* CommonPresentation */,
@@ -88,8 +109,8 @@
 				BB947E062907E5A600A57B65 /* MainRouter+OnboardingDelegate.swift */,
 				BB947E0A2907F10200A57B65 /* MainRouter+LoginDelegate.swift */,
 				BBC5954F290826B300BFB955 /* MainRouter+UserProfileDelegate.swift */,
-				BBADE36B2902846C00E8AC86 /* Assets.xcassets */,
 				BBADE36D2902846C00E8AC86 /* Preview Content */,
+				BB3B664D2938991200BD203D /* Resources */,
 			);
 			path = TemplateApp;
 			sourceTree = "<group>";
@@ -130,6 +151,10 @@
 				BB947E082907EF5200A57B65 /* FeatureLogin */,
 				BBC5954D2908235300BFB955 /* FeatureUserProfile */,
 				BB228326290843140065C980 /* FeatureExample */,
+				BB9AC8A0292F6CB9006F8CB6 /* CommonDomain */,
+				BB9AC8A2292F6CB9006F8CB6 /* CommonPresentation */,
+				BB21E9D42938ACB600EDEDFA /* CommonData */,
+				BB21E9D62938ACBA00EDEDFA /* Utils */,
 			);
 			productName = TemplateApp;
 			productReference = BBADE3642902846B00E8AC86 /* TemplateApp.app */;
@@ -175,6 +200,7 @@
 			files = (
 				BBADE36F2902846C00E8AC86 /* Preview Assets.xcassets in Resources */,
 				BBADE36C2902846C00E8AC86 /* Assets.xcassets in Resources */,
+				BBD9A9D3292F6E2B00112C36 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +415,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		BB21E9D42938ACB600EDEDFA /* CommonData */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CommonData;
+		};
+		BB21E9D62938ACBA00EDEDFA /* Utils */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Utils;
+		};
 		BB228326290843140065C980 /* FeatureExample */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = FeatureExample;
@@ -400,6 +434,14 @@
 		BB947E082907EF5200A57B65 /* FeatureLogin */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = FeatureLogin;
+		};
+		BB9AC8A0292F6CB9006F8CB6 /* CommonDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CommonDomain;
+		};
+		BB9AC8A2292F6CB9006F8CB6 /* CommonPresentation */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CommonPresentation;
 		};
 		BBC5954D2908235300BFB955 /* FeatureUserProfile */ = {
 			isa = XCSwiftPackageProductDependency;

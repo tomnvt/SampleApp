@@ -1,4 +1,5 @@
 import CommonPresentation
+import Utils
 import UIKit
 import SwiftUI
 
@@ -14,7 +15,11 @@ public struct OnboardingManager {
     public func start() {
         let view = OnboardingView(onEvent: { event in
             switch event {
-            case .skipButtonTapped, .startButtonTapped:
+            case .skipButtonTapped(let pageNumber):
+                AnalyticsLogger.logEvent(.onboardingSkipped(pageNumber: pageNumber))
+                delegate.onboardingFinished()
+            case .startButtonTapped:
+                AnalyticsLogger.logEvent(.onboardingFinished)
                 delegate.onboardingFinished()
             }
         })
