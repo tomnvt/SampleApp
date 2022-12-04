@@ -35,7 +35,7 @@ public struct CustomTextField: View {
     public var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             Text(title)
-                .font(.system(size: 12))
+                .font(.meta1)
                 .padding(.bottom, .x0p5)
                 .padding(.leading, .x2)
                 .foregroundColor(Color(hex: 0x40B8B8))
@@ -72,7 +72,7 @@ public struct CustomTextField: View {
                             })
                         }
                     }
-                    .font(.system(size: 14))
+                    .font(.body4.regular)
                     .padding()
                 }
                 .shake(shakeTrigger: shakeTrigger ?? false)

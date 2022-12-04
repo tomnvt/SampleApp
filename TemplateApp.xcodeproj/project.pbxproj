@@ -25,6 +25,10 @@
 		BBADE36F2902846C00E8AC86 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBADE36E2902846C00E8AC86 /* Preview Assets.xcassets */; };
 		BBC5954E2908235300BFB955 /* FeatureUserProfile in Frameworks */ = {isa = PBXBuildFile; productRef = BBC5954D2908235300BFB955 /* FeatureUserProfile */; };
 		BBC59550290826B300BFB955 /* MainRouter+UserProfileDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC5954F290826B300BFB955 /* MainRouter+UserProfileDelegate.swift */; };
+		BBC8204D293CF7C40050BFB4 /* SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BBC8204B293CF7BA0050BFB4 /* SemiBold.ttf */; };
+		BBC8204E293CF7C40050BFB4 /* Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BBC82046293CDBE40050BFB4 /* Regular.ttf */; };
+		BBC8204F293CF7C40050BFB4 /* Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BBC82047293CDBE40050BFB4 /* Bold.ttf */; };
+		BBC82052293CF95D0050BFB4 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = BBC82051293CF95D0050BFB4 /* swiftgen.yml */; };
 		BBD9A9D3292F6E2B00112C36 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BBD9A9D2292F6E2B00112C36 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +51,11 @@
 		BBADE36E2902846C00E8AC86 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BBC5954C290817F300BFB955 /* FeatureUserProfile */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FeatureUserProfile; sourceTree = "<group>"; };
 		BBC5954F290826B300BFB955 /* MainRouter+UserProfileDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainRouter+UserProfileDelegate.swift"; sourceTree = "<group>"; };
+		BBC82046293CDBE40050BFB4 /* Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Regular.ttf; sourceTree = "<group>"; };
+		BBC82047293CDBE40050BFB4 /* Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bold.ttf; sourceTree = "<group>"; };
+		BBC8204B293CF7BA0050BFB4 /* SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SemiBold.ttf; sourceTree = "<group>"; };
+		BBC82050293CF8760050BFB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BBC82051293CF95D0050BFB4 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		BBD9A9D2292F6E2B00112C36 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BBDDE8132907E07B00A323C2 /* FeatureLogin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FeatureLogin; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,6 +91,7 @@
 		BB3B664D2938991200BD203D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BBC82044293CDAD90050BFB4 /* Fonts */,
 				BBD9A9D2292F6E2B00112C36 /* GoogleService-Info.plist */,
 				BBADE36B2902846C00E8AC86 /* Assets.xcassets */,
 			);
@@ -102,6 +112,7 @@
 				BBADE3662902846B00E8AC86 /* TemplateApp */,
 				BBADE3652902846B00E8AC86 /* Products */,
 				BBADE3782902868700E8AC86 /* Frameworks */,
+				BBC82051293CF95D0050BFB4 /* swiftgen.yml */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +127,7 @@
 		BBADE3662902846B00E8AC86 /* TemplateApp */ = {
 			isa = PBXGroup;
 			children = (
+				BBC82050293CF8760050BFB4 /* Info.plist */,
 				BB21E9DB2938E6EF00EDEDFA /* Dependencies */,
 				BB95B0E82903083D00506578 /* MainRouter.swift */,
 				BBADE3672902846B00E8AC86 /* AppDelegate.swift */,
@@ -142,6 +154,16 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BBC82044293CDAD90050BFB4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BBC82047293CDBE40050BFB4 /* Bold.ttf */,
+				BBC82046293CDBE40050BFB4 /* Regular.ttf */,
+				BBC8204B293CF7BA0050BFB4 /* SemiBold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,8 +236,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBADE36F2902846C00E8AC86 /* Preview Assets.xcassets in Resources */,
+				BBC82052293CF95D0050BFB4 /* swiftgen.yml in Resources */,
 				BBADE36C2902846C00E8AC86 /* Assets.xcassets in Resources */,
 				BBD9A9D3292F6E2B00112C36 /* GoogleService-Info.plist in Resources */,
+				BBC8204F293CF7C40050BFB4 /* Bold.ttf in Resources */,
+				BBC8204D293CF7C40050BFB4 /* SemiBold.ttf in Resources */,
+				BBC8204E293CF7C40050BFB4 /* Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +411,7 @@
 				DEVELOPMENT_ASSET_PATHS = "TemplateApp/Preview\\ Content";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TemplateApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -412,6 +439,7 @@
 				DEVELOPMENT_ASSET_PATHS = "TemplateApp/Preview\\ Content";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TemplateApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

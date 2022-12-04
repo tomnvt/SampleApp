@@ -1,6 +1,7 @@
 import UIKit
+import SwiftUI
 
-// MARK: - Spacing Type Protocol
+// MARK: - Padding Type Protocol
 private protocol SpacingType {
     static var x0p5: Self { get }
     static var x1: Self { get }
@@ -19,7 +20,7 @@ private protocol SpacingType {
 }
 
 // MARK: - Generic spacing
-public enum Spacing: SpacingType {
+public enum Padding: SpacingType {
     /// 2 (iPhone)
     case x0p5
     /// 4 (iPhone)
@@ -119,10 +120,8 @@ private enum iPadSpacing: Int, SpacingType {
     case x10 = 40
 }
 
-import SwiftUI
-
-extension View {
-    public func padding(_ edges: Edge.Set = .all, _ spacing: Spacing) -> some View {
+public extension View {
+    func padding(_ edges: Edge.Set = .all, _ spacing: Padding) -> some View {
         return self
             .padding(edges, CGFloat(spacing.rawValue))
     }
