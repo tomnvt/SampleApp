@@ -18,14 +18,14 @@ struct ForgottenPasswordView: View {
                 logoImage
                 Text(L10n.General.forgottenPassword)
                     .font(.title)
-                    .padding(.bottom, 32)
+                    .padding(.bottom, .x8)
                 Text(L10n.General.enterEmail)
                     .font(.headline)
-                    .padding(.bottom, 16)
+                    .padding(.bottom, .x4)
                 emailTextField
-                    .padding(.horizontal, 16)
+                    .padding(.horizontal, .x4)
                 resetPasswordButton
-                    .padding(.horizontal, 16)
+                    .padding(.horizontal, .x4)
                 Spacer()
             }
         }.navigationBarHidden(true)
@@ -61,7 +61,7 @@ struct ForgottenPasswordView: View {
                 }
                 .frame(height: 56)
                 .cornerRadius(8)
-        }).padding(.bottom, 24)
+        }).padding(.bottom, .x6)
     }
 }
 

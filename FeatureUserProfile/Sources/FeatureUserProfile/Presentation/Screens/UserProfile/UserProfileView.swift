@@ -17,7 +17,8 @@ struct UserProfileView: View {
                 Spacer()
                 deleteAccountButton
                 logoutButton
-            }.padding()
+            }
+            .padding()
         }.navigationTitle("Profile")
     }
 

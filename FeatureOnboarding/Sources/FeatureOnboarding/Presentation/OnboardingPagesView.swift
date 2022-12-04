@@ -88,7 +88,8 @@ private extension OnboardingView {
             }, label: {
                 Text("Skip")
             })
-        }.padding()
+        }
+        .padding()
     }
 
     @ViewBuilder
@@ -113,8 +114,8 @@ private extension OnboardingView {
                         RoundedRectangle(cornerRadius: 39)
                             .stroke(Color.white.opacity(0.38), lineWidth: 3)
                     )
-                    .padding(.trailing, 24)
-                    .padding(.bottom, 24)
+                    .padding(.trailing, .x6)
+                    .padding(.bottom, .x6)
             })
         }
     }

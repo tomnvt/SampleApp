@@ -11,7 +11,7 @@ struct EmailLoginView: View {
             signInButton
             forgottenPasswordButton
         }
-        .padding(.horizontal, 20)
+        .padding(.horizontal, .x5)
 
         .handleLoading(isLoading: viewModel.isLoading)
         .navigationBarHidden(true)
@@ -48,7 +48,7 @@ struct EmailLoginView: View {
                 }
                 .frame(height: 56)
                 .cornerRadius(8)
-        }).padding(.bottom, 24)
+        }).padding(.bottom, .x6)
     }
 
     var forgottenPasswordButton: some View {
@@ -58,7 +58,7 @@ struct EmailLoginView: View {
             Text(L10n.General.forgottenPassword)
                 .underline()
                 .frame(alignment: .center)
-                .padding(.bottom, 32)
+                .padding(.bottom, .x8)
         })
     }
 }

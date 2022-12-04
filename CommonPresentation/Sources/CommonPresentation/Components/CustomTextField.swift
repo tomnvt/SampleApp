@@ -36,8 +36,8 @@ public struct CustomTextField: View {
         VStack(alignment: .leading, spacing: 0) {
             Text(title)
                 .font(.system(size: 12))
-                .padding(.bottom, 2)
-                .padding(.leading, 8)
+                .padding(.bottom, .x0p5)
+                .padding(.leading, .x2)
                 .foregroundColor(Color(hex: 0x40B8B8))
 
             Rectangle()
@@ -76,7 +76,7 @@ public struct CustomTextField: View {
                     .padding()
                 }
                 .shake(shakeTrigger: shakeTrigger ?? false)
-                .padding(.bottom, 24)
+                .padding(.bottom, .x6)
         }.onAppear {
             isSecured = hidableUserInput
         }
