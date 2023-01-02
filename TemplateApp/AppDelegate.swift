@@ -1,5 +1,6 @@
 import Firebase
 import SwiftUI
+import Utils
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -12,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     ) -> Bool {
         guard let windowScene = (application.connectedScenes.first as? UIWindowScene) else { return true }
 
-        FirebaseApp.configure()
+        setupFirebase()
 
         let navigationController = UINavigationController()
         let window = UIWindow(windowScene: windowScene)
@@ -27,5 +28,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         mainRouter.start()
         return true
+    }
+
+    func setupFirebase() {
+        FirebaseApp.configure()
+        AnalyticsLogger.shared = AnalyticsLogger({ name, parameters in
+            Analytics.logEvent(name, parameters: parameters)
+        })
     }
 }
