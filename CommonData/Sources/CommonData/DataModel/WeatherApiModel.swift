@@ -1,6 +1,6 @@
 import Foundation
 
-struct Weather: Codable {
+struct WeatherApiModel: Codable {
     let latitude, longitude, generationtimeMS: Double
     let utcOffsetSeconds: Int
     let timezone, timezoneAbbreviation: String

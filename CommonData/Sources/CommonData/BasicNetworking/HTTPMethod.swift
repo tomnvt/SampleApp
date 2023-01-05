@@ -1,4 +1,4 @@
-enum HTTPMethod: String {
+public enum HTTPMethod: String {
     case connect = "CONNECT"
     case delete = "DELETE"
     case get = "GET"
