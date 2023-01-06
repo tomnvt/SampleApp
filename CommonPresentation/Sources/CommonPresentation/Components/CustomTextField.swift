@@ -38,11 +38,10 @@ public struct CustomTextField: View {
                 .font(.meta1)
                 .padding(.bottom, .x0p5)
                 .padding(.leading, .x2)
-                .foregroundColor(Color(hex: 0x40B8B8))
+                .foregroundColor(Asset.Colors.textFieldTitle.swiftUIColor)
 
             Rectangle()
-                .stroke(Color(hex: 0xEFEFEF), lineWidth: 1)
-                .background(Color(hex: 0xF8F9FA))
+                .background(Asset.Colors.textFieldBackground.swiftUIColor)
                 .cornerRadius(8)
                 .frame(height: isMultiline ? 150 : 50)
                 .overlay {

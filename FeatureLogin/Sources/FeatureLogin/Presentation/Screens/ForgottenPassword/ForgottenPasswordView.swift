@@ -42,7 +42,7 @@ struct ForgottenPasswordView: View {
     }
 
     var logoImage: some View {
-        Image(uiImage: Asset.logo.image)
+        Image(uiImage: Asset.Images.logo.image)
             .resizable()
             .scaledToFit()
             .frame(height: 100)

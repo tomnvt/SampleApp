@@ -100,7 +100,7 @@ private extension OnboardingView {
                 onEvent(.startButtonTapped)
             }, label: {
                 Circle()
-                    .foregroundColor(Color(hex: 0x222222))
+                    .foregroundColor(Asset.Colors.onboardingBottomButton.swiftUIColor)
                     .frame(size: 78)
                     .overlay(alignment: .center) {
                         if currentPage == 5 {
