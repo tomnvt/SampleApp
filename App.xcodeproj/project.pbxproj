@@ -47,7 +47,7 @@
 		BB947E062907E5A600A57B65 /* MainRouter+OnboardingDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainRouter+OnboardingDelegate.swift"; sourceTree = "<group>"; };
 		BB947E0A2907F10200A57B65 /* MainRouter+LoginDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainRouter+LoginDelegate.swift"; sourceTree = "<group>"; };
 		BB95B0E82903083D00506578 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
-		BBADE3642902846B00E8AC86 /* TemplateApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TemplateApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBADE3642902846B00E8AC86 /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBADE3672902846B00E8AC86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBADE36B2902846C00E8AC86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBADE36E2902846C00E8AC86 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -123,7 +123,7 @@
 		BBADE3652902846B00E8AC86 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BBADE3642902846B00E8AC86 /* TemplateApp.app */,
+				BBADE3642902846B00E8AC86 /* App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -173,9 +173,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BBADE3632902846B00E8AC86 /* TemplateApp */ = {
+		BBADE3632902846B00E8AC86 /* App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BBADE3722902846C00E8AC86 /* Build configuration list for PBXNativeTarget "TemplateApp" */;
+			buildConfigurationList = BBADE3722902846C00E8AC86 /* Build configuration list for PBXNativeTarget "App" */;
 			buildPhases = (
 				BB21E9E429390CDA00EDEDFA /* Sourcery */,
 				BBADE3602902846B00E8AC86 /* Sources */,
@@ -186,7 +186,7 @@
 			);
 			dependencies = (
 			);
-			name = TemplateApp;
+			name = App;
 			packageProductDependencies = (
 				BB947E042907E16500A57B65 /* FeatureOnboarding */,
 				BB947E082907EF5200A57B65 /* FeatureLogin */,
@@ -199,7 +199,7 @@
 				BBD1B726296335C20013A5D7 /* FirebaseAnalytics */,
 			);
 			productName = TemplateApp;
-			productReference = BBADE3642902846B00E8AC86 /* TemplateApp.app */;
+			productReference = BBADE3642902846B00E8AC86 /* App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -217,7 +217,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BBADE35F2902846B00E8AC86 /* Build configuration list for PBXProject "TemplateApp" */;
+			buildConfigurationList = BBADE35F2902846B00E8AC86 /* Build configuration list for PBXProject "App" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -233,7 +233,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BBADE3632902846B00E8AC86 /* TemplateApp */,
+				BBADE3632902846B00E8AC86 /* App */,
 			);
 		};
 /* End PBXProject section */
@@ -468,7 +468,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BBADE35F2902846B00E8AC86 /* Build configuration list for PBXProject "TemplateApp" */ = {
+		BBADE35F2902846B00E8AC86 /* Build configuration list for PBXProject "App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BBADE3702902846C00E8AC86 /* Debug */,
@@ -477,7 +477,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BBADE3722902846C00E8AC86 /* Build configuration list for PBXNativeTarget "TemplateApp" */ = {
+		BBADE3722902846C00E8AC86 /* Build configuration list for PBXNativeTarget "App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BBADE3732902846C00E8AC86 /* Debug */,
