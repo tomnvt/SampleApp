@@ -6,8 +6,8 @@ public enum UserDefaultsKey: String, CaseIterable {
 
 public class UserDefaultsDataSource {
     public typealias Key = UserDefaultsKey
-
-    public static let shared = UserDefaultsDataSource()
+    
+    public init() {}
 
     private let userDefaults = UserDefaults.standard
 

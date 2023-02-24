@@ -38,7 +38,7 @@ private extension ProgressView {
             .progressViewStyle(CircularProgressViewStyle(tint: .gray))
             .foregroundColor(.white)
             .font(.title)
-            .padding(24)
+            .padding(.all, Padding.x6)
             .background(
                 Rectangle()
                     .cornerRadius(8)

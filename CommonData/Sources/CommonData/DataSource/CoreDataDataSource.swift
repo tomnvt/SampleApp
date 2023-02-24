@@ -1,14 +1,9 @@
 import CoreData
 
 public class CoreDataDataSource: NSPersistentContainer {
-
-    public static let shared = CoreDataDataSource(
-        objectModelURL: Bundle.module.url(forResource: "Model", withExtension: "momd")
-    )
-
-    public init(objectModelURL: URL?) {
+    public init() {
         guard
-            let objectModelURL,
+            let objectModelURL = Bundle.module.url(forResource: "Model", withExtension: "momd"),
             let objectModel = NSManagedObjectModel(contentsOf: objectModelURL)
         else {
             fatalError("Failed to retrieve the object model")

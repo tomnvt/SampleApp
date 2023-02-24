@@ -5,7 +5,7 @@ struct OnboardingView: View {
 
     // MARK: - Types
     enum Event {
-        case skipButtonTapped
+        case skipButtonTapped(pageNumber: Int)
         case startButtonTapped
     }
 
@@ -84,11 +84,12 @@ private extension OnboardingView {
             }
             Spacer()
             Button(action: {
-                onEvent(.skipButtonTapped)
+                onEvent(.skipButtonTapped(pageNumber: currentPage))
             }, label: {
                 Text("Skip")
             })
-        }.padding()
+        }
+        .padding()
     }
 
     @ViewBuilder
@@ -99,7 +100,7 @@ private extension OnboardingView {
                 onEvent(.startButtonTapped)
             }, label: {
                 Circle()
-                    .foregroundColor(Color(hex: 0x222222))
+                    .foregroundColor(Asset.Colors.onboardingBottomButton.swiftUIColor)
                     .frame(size: 78)
                     .overlay(alignment: .center) {
                         if currentPage == 5 {
@@ -113,8 +114,8 @@ private extension OnboardingView {
                         RoundedRectangle(cornerRadius: 39)
                             .stroke(Color.white.opacity(0.38), lineWidth: 3)
                     )
-                    .padding(.trailing, 24)
-                    .padding(.bottom, 24)
+                    .padding(.trailing, .x6)
+                    .padding(.bottom, .x6)
             })
         }
     }

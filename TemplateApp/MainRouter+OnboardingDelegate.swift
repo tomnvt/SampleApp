@@ -3,7 +3,7 @@ import FeatureOnboarding
 
 extension MainRouter: OnboardingDelegate {
     func onboardingFinished() {
-        UserRepository.shared.setOnboardingShown()
+        dependencies.userRepository.setOnboardingShown()
         showLogin()
     }
 }

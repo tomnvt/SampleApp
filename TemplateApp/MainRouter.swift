@@ -9,16 +9,18 @@ import UIKit
 class MainRouter {
     var tabsNavigationControllers = [Tab: UINavigationController]()
 
+    let dependencies: AppDependencies
     let mainNavigationController: UINavigationController
 
-    init(mainNavigationController: UINavigationController) {
+    init(dependencies: AppDependencies, mainNavigationController: UINavigationController) {
+        self.dependencies = dependencies
         self.mainNavigationController = mainNavigationController
     }
 
     func start() {
-        if UserRepository.shared.isUserLoggedIn() {
+        if dependencies.userRepository.isUserLoggedIn() {
             showTabBar()
-        } else if UserRepository.shared.onboardingWasShown() {
+        } else if dependencies.userRepository.onboardingWasShown() {
             showLogin()
         } else {
             showOnboarding()
@@ -33,9 +35,9 @@ class MainRouter {
         guard let firstTabNavigationController = tabsNavigationControllers[.tab1],
               let secondTabNavigationController = tabsNavigationControllers[.tab2]
         else { return }
-        FeatureExampleManager(navigationController: firstTabNavigationController)
+        FeatureExampleManager(dependencies: dependencies.featureExampleDependencies, navigationController: firstTabNavigationController)
             .start()
-        UserProfileManager(navigationController: secondTabNavigationController, delegate: self)
+        UserProfileManager(dependencies: dependencies.featureUserProfileDependencies, navigationController: secondTabNavigationController, delegate: self)
             .start()
         mainNavigationController.pushViewController(tabBar, animated: true)
     }
@@ -46,7 +48,7 @@ class MainRouter {
     }
 
     func showLogin() {
-        LoginManager(navigationController: mainNavigationController, delegate: self)
+        LoginManager(dependencies: dependencies.featureLoginDependencies, navigationController: mainNavigationController, delegate: self)
             .start()
     }
 }

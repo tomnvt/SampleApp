@@ -3,11 +3,7 @@ import CommonDomain
 public class LoginRepository {
     private let keychainDataSource: KeychainDataSource
 
-    public static let shared = LoginRepository(
-        keychainDataSource: .shared
-    )
-
-    init(keychainDataSource: KeychainDataSource) {
+    public init(keychainDataSource: KeychainDataSource) {
         self.keychainDataSource = keychainDataSource
     }
 }

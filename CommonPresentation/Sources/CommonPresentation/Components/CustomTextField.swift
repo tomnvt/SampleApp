@@ -35,14 +35,13 @@ public struct CustomTextField: View {
     public var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             Text(title)
-                .font(.system(size: 12))
-                .padding(.bottom, 2)
-                .padding(.leading, 8)
-                .foregroundColor(Color(hex: 0x40B8B8))
+                .font(.meta1)
+                .padding(.bottom, .x0p5)
+                .padding(.leading, .x2)
+                .foregroundColor(Asset.Colors.textFieldTitle.swiftUIColor)
 
             Rectangle()
-                .stroke(Color(hex: 0xEFEFEF), lineWidth: 1)
-                .background(Color(hex: 0xF8F9FA))
+                .background(Asset.Colors.textFieldBackground.swiftUIColor)
                 .cornerRadius(8)
                 .frame(height: isMultiline ? 150 : 50)
                 .overlay {
@@ -72,11 +71,11 @@ public struct CustomTextField: View {
                             })
                         }
                     }
-                    .font(.system(size: 14))
+                    .font(.body4.regular)
                     .padding()
                 }
                 .shake(shakeTrigger: shakeTrigger ?? false)
-                .padding(.bottom, 24)
+                .padding(.bottom, .x6)
         }.onAppear {
             isSecured = hidableUserInput
         }

@@ -18,14 +18,14 @@ struct ForgottenPasswordView: View {
                 logoImage
                 Text(L10n.General.forgottenPassword)
                     .font(.title)
-                    .padding(.bottom, 32)
+                    .padding(.bottom, .x8)
                 Text(L10n.General.enterEmail)
                     .font(.headline)
-                    .padding(.bottom, 16)
+                    .padding(.bottom, .x4)
                 emailTextField
-                    .padding(.horizontal, 16)
+                    .padding(.horizontal, .x4)
                 resetPasswordButton
-                    .padding(.horizontal, 16)
+                    .padding(.horizontal, .x4)
                 Spacer()
             }
         }.navigationBarHidden(true)
@@ -42,7 +42,7 @@ struct ForgottenPasswordView: View {
     }
 
     var logoImage: some View {
-        Image(uiImage: Asset.logo.image)
+        Image(uiImage: Asset.Images.logo.image)
             .resizable()
             .scaledToFit()
             .frame(height: 100)
@@ -54,14 +54,9 @@ struct ForgottenPasswordView: View {
         Button(action: {
             viewModel.onResetBtnTap()
         }, label: {
-            Rectangle()
-                .overlay {
-                    Text(L10n.General.forgottenPassword)
-                        .foregroundColor(Color.white)
-                }
-                .frame(height: 56)
-                .cornerRadius(8)
-        }).padding(.bottom, 24)
+            Text(L10n.General.forgottenPassword)
+        })
+        .buttonStyle(PrimaryButtonStyle())
     }
 }
 

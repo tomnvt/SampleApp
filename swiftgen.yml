@@ -8,10 +8,16 @@ strings:
 
 xcassets:
   - inputs: 
-    - CommonPresentation/Sources/CommonPresentation/Resources/Assets.xcassets
+    - CommonPresentation/Sources/CommonPresentation/Resources/Colors.xcassets
+    - CommonPresentation/Sources/CommonPresentation/Resources/Images.xcassets
     outputs:
       templateName: swift5
       output: CommonPresentation/Sources/CommonPresentation/Generated/Assets.swift
       params:
         publicAccess: true
 
+fonts:
+  inputs: TemplateApp/Resources/Fonts
+  outputs:
+    templateName: swift5
+    output: CommonPresentation/Sources/CommonPresentation/Generated/Fonts.swift

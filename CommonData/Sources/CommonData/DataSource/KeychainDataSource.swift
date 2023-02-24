@@ -9,7 +9,7 @@ public enum KeychainKey: String, CaseIterable {
 public class KeychainDataSource {
     public typealias Key = KeychainKey
 
-    public static let shared = KeychainDataSource()
+    public init() {}
 
     private let keychain = Keychain()
 
