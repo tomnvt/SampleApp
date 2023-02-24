@@ -56,30 +56,19 @@ struct UserProfileView: View {
         Button(action: {
             viewModel.onDeleteAccountButtonTap()
         }, label: {
-            Rectangle()
-                .foregroundColor(Color.gray)
-                .overlay {
-                    Text("Delete account")
-                        .foregroundColor(Color.white)
-                }
-                .frame(height: 56)
-                .cornerRadius(8)
+            Text("Delete account")
+                .foregroundColor(Color.white)
         })
+        .buttonStyle(PrimaryButtonStyle())
     }
 
     var logoutButton: some View {
         Button(action: {
             viewModel.onLogoutButtonTap()
         }, label: {
-            Rectangle()
-                .foregroundColor(Color.gray)
-                .overlay {
-                    Text("Logout")
-                        .foregroundColor(Color.white)
-                }
-                .frame(height: 56)
-                .cornerRadius(8)
+            Text("Logout")
         })
+        .buttonStyle(PrimaryButtonStyle())
     }
 }
 

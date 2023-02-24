@@ -56,10 +56,8 @@ struct EmailLoginView: View {
             viewModel.forgotenPasswordTapped()
         }, label: {
             Text(L10n.General.forgottenPassword)
-                .underline()
-                .frame(alignment: .center)
-                .padding(.bottom, .x8)
         })
+        .buttonStyle(PrimaryButtonStyle())
     }
 }
 

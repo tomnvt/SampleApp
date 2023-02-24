@@ -54,14 +54,9 @@ struct ForgottenPasswordView: View {
         Button(action: {
             viewModel.onResetBtnTap()
         }, label: {
-            Rectangle()
-                .overlay {
-                    Text(L10n.General.forgottenPassword)
-                        .foregroundColor(Color.white)
-                }
-                .frame(height: 56)
-                .cornerRadius(8)
-        }).padding(.bottom, .x6)
+            Text(L10n.General.forgottenPassword)
+        })
+        .buttonStyle(PrimaryButtonStyle())
     }
 }
 
