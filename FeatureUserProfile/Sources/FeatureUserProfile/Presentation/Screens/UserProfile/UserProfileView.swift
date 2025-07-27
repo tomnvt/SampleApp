@@ -1,5 +1,5 @@
 import SwiftUI
-import CommonDomain
+import SharedDomain
 import SharedUI
 
 struct UserProfileView: View {

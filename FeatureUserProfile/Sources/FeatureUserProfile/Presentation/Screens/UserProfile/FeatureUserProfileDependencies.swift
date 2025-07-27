@@ -1,4 +1,4 @@
-import CommonDomain
+import SharedDomain
 
 // sourcery: ModuleDependencies
 public class FeatureUserProfileDependencies {

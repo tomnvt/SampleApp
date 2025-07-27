@@ -13,7 +13,7 @@ let package = Package(
             targets: ["SharedUI"]),
     ],
     dependencies: [
-        .package(path: "../CommonDomain"),
+        .package(path: "../SharedDomain"),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -21,7 +21,7 @@ let package = Package(
         .target(
             name: "SharedUI",
             dependencies: [
-                "CommonDomain",
+                "SharedDomain",
             ]),
     ]
 )

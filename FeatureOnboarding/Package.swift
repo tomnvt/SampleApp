@@ -14,7 +14,7 @@ let package = Package(
     ],
     dependencies: [
         .package(path: "../CommonData"),
-        .package(path: "../CommonDomain"),
+        .package(path: "../SharedDomain"),
         .package(path: "../SharedUI"),
         .package(path: "../Utils"),
     ],
@@ -25,7 +25,7 @@ let package = Package(
             name: "FeatureOnboarding",
             dependencies: [
                 "CommonData",
-                "CommonDomain",
+                "SharedDomain",
                 "SharedUI",
                 "Utils",
             ]),

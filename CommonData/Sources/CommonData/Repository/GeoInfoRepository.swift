@@ -1,4 +1,4 @@
-import CommonDomain
+import SharedDomain
 
 public class GeoInfoRepository: GeoInfoRepositoryProtocol {
     private let httpClient: HTTPClientProtocol

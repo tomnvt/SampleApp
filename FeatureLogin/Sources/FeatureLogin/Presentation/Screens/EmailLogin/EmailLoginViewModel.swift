@@ -1,4 +1,4 @@
-import CommonDomain
+import SharedDomain
 import Foundation
 import SwiftUI
 

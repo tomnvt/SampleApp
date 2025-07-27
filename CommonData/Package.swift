@@ -12,14 +12,14 @@ let package = Package(
             targets: ["CommonData"]),
     ],
     dependencies: [
-        .package(path: "../CommonDomain"),
+        .package(path: "../SharedDomain"),
         .package(url: "https://github.com/kishikawakatsumi/KeychainAccess", .upToNextMajor(from: "4.2.2"))
     ],
     targets: [
         .target(
             name: "CommonData",
             dependencies: [
-                "CommonDomain",
+                "SharedDomain",
                 "KeychainAccess",
             ],
             resources: [.process("Resources/")]

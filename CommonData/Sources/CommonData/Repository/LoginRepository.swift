@@ -1,4 +1,4 @@
-import CommonDomain
+import SharedDomain
 
 public class LoginRepository {
     private let keychainDataSource: KeychainDataSource

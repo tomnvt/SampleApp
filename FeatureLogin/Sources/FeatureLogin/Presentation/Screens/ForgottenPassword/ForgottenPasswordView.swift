@@ -1,5 +1,5 @@
 import SharedUI
-import CommonDomain
+import SharedDomain
 import SwiftUI
 
 struct ForgottenPasswordView: View {

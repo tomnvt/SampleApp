@@ -1,5 +1,5 @@
 import CommonData
-import CommonDomain
+import SharedDomain
 
 class AppDependencies {
     // MARK: - Data sources

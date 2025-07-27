@@ -1,4 +1,4 @@
-import CommonDomain
+import SharedDomain
 
 public class UserRepository {
     let userDefaultsDataSource: UserDefaultsDataSource

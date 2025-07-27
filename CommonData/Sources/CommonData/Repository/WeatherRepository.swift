@@ -1,4 +1,4 @@
-import CommonDomain
+import SharedDomain
 
 public class WeatherRepository: WeatherRepositoryProtocol {
     private let httpClient: HTTPClientProtocol

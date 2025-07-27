@@ -1,5 +1,5 @@
 import XCTest
-@testable import CommonDomain
+@testable import SharedDomain
 
 final class WeatherInteractorTests: XCTestCase {
     let sut = WeatherInteractor(
