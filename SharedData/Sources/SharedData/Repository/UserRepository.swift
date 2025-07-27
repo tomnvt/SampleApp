@@ -29,7 +29,7 @@ extension UserRepository: UserRepositoryProtocol {
         return UserProfile(
             photoURL: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlgckJKuKPLPXykG5eBuRqTCMds9uWCMSOhg&usqp=CAU",
             userName: "Mr. Burns",
-            email: "smithers@burns.com"
+            email: "monty@burns.com"
         )
     }
 
