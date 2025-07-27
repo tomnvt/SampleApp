@@ -15,7 +15,7 @@ let package = Package(
     dependencies: [
         .package(path: "../CommonData"),
         .package(path: "../CommonDomain"),
-        .package(path: "../CommonPresentation"),
+        .package(path: "../SharedUI"),
         .package(path: "../Utils"),
     ],
     targets: [
@@ -26,7 +26,7 @@ let package = Package(
             dependencies: [
                 "CommonData",
                 "CommonDomain",
-                "CommonPresentation",
+                "SharedUI",
                 "Utils",
             ]),
         .testTarget(

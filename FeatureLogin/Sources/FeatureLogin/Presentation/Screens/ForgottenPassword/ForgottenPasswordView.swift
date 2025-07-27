@@ -1,4 +1,4 @@
-import CommonPresentation
+import SharedUI
 import CommonDomain
 import SwiftUI
 

@@ -1,4 +1,4 @@
-import CommonPresentation
+import SharedUI
 import Utils
 import UIKit
 import SwiftUI

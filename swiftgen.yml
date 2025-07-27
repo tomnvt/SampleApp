@@ -1,18 +1,18 @@
 strings:
-  - inputs: CommonPresentation/Sources/CommonPresentation/Resources/Localizable.strings
+  - inputs: SharedUI/Sources/SharedUI/Resources/Localizable.strings
     outputs:
       templateName: structured-swift5
-      output: CommonPresentation/Sources/CommonPresentation/Generated/Strings.swift
+      output: SharedUI/Sources/SharedUI/Generated/Strings.swift
       params:
         publicAccess: true
 
 xcassets:
   - inputs: 
-    - CommonPresentation/Sources/CommonPresentation/Resources/Colors.xcassets
-    - CommonPresentation/Sources/CommonPresentation/Resources/Images.xcassets
+    - SharedUI/Sources/SharedUI/Resources/Colors.xcassets
+    - SharedUI/Sources/SharedUI/Resources/Images.xcassets
     outputs:
       templateName: swift5
-      output: CommonPresentation/Sources/CommonPresentation/Generated/Assets.swift
+      output: SharedUI/Sources/SharedUI/Generated/Assets.swift
       params:
         publicAccess: true
 
@@ -20,4 +20,4 @@ fonts:
   inputs: SampleApp/Resources/Fonts
   outputs:
     templateName: swift5
-    output: CommonPresentation/Sources/CommonPresentation/Generated/Fonts.swift
+    output: SharedUI/Sources/SharedUI/Generated/Fonts.swift

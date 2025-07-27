@@ -1,6 +1,6 @@
 import SwiftUI
 import CommonDomain
-import CommonPresentation
+import SharedUI
 
 struct UserProfileView: View {
     @ObservedObject var viewModel: UserProfileViewModel
