@@ -18,6 +18,11 @@ final class EmailLoginViewModel: ObservableObject {
     ) {
         self.loginInteractor = loginInteractor
         self.onEvent = onEvent
+
+        #if DEBUG
+        email = "hello@app.com"
+        password = "123456"
+        #endif
     }
 }
 
