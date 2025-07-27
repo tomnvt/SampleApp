@@ -3,4 +3,4 @@ sources:
 templates:
   - ../Templates/
 output:
-  ../../SampleApp/Dependencies/
+  ../../Core/Sources/Core/Dependencies/

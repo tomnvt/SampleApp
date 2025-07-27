@@ -6,18 +6,17 @@ import FeatureUserProfile
 import SwiftUI
 import UIKit
 
-class MainRouter {
+public class MainCoordinator {
     var tabsNavigationControllers = [Tab: UINavigationController]()
 
-    let dependencies: AppDependencies
+    let dependencies = AppDependencies()
     let mainNavigationController: UINavigationController
 
-    init(dependencies: AppDependencies, mainNavigationController: UINavigationController) {
-        self.dependencies = dependencies
+    public init(mainNavigationController: UINavigationController) {
         self.mainNavigationController = mainNavigationController
     }
 
-    func start() {
+    public func start() {
         if dependencies.userRepository.isUserLoggedIn() {
             showTabBar()
         } else if dependencies.userRepository.onboardingWasShown() {

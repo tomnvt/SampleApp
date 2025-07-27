@@ -1,3 +1,4 @@
+import Core
 import Firebase
 import SwiftUI
 import Utils
@@ -5,7 +6,6 @@ import Utils
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
-    let dependencies = AppDependencies()
 
     func application(
         _ application: UIApplication,
@@ -17,16 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let navigationController = UINavigationController()
         let window = UIWindow(windowScene: windowScene)
-        let mainRouter = MainRouter(
-            dependencies: dependencies,
-            mainNavigationController: navigationController
-        )
+        let mainCoordinator = MainCoordinator(mainNavigationController: navigationController)
 
         window.rootViewController = navigationController
         self.window = window
         window.makeKeyAndVisible()
 
-        mainRouter.start()
+        mainCoordinator.start()
         return true
     }
 
