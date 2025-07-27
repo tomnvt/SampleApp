@@ -30,7 +30,7 @@ public enum Asset {
     public static let textFieldTitle = ColorAsset(name: "textFieldTitle")
   }
   public enum Images {
-    public static let logo = ImageAsset(name: "logo")
+    public static let forgottenPassword = ImageAsset(name: "forgotten_password")
   }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name

@@ -42,12 +42,13 @@ struct ForgottenPasswordView: View {
     }
 
     var logoImage: some View {
-        Image(uiImage: Asset.Images.logo.image)
+        Image(uiImage: Asset.Images.forgottenPassword.image)
             .resizable()
+            .renderingMode(.template)
             .scaledToFit()
+            .tint(.white)
             .frame(height: 100)
             .padding(.bottom, 54)
-            .animation(.spring())
     }
 
     var resetPasswordButton: some View {
