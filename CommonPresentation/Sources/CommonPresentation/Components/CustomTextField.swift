@@ -61,6 +61,7 @@ public struct CustomTextField: View {
                                     Text(placeholderText).foregroundColor(.gray)
                                 }
                                 .foregroundColor(textColor)
+                                .autocapitalization(.none)
                         }
                         if hidableUserInput {
                             Button(action: {
