@@ -1,6 +1,6 @@
 import CoreData
 
-public class CoreDataDataSource: NSPersistentContainer {
+public class CoreDataDataSource: NSPersistentContainer, @unchecked Sendable {
     public init() {
         guard
             let objectModelURL = Bundle.module.url(forResource: "Model", withExtension: "momd"),
