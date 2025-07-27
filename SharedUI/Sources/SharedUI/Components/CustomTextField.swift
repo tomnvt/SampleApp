@@ -41,7 +41,7 @@ public struct CustomTextField: View {
                 .foregroundColor(Asset.Colors.textFieldTitle.swiftUIColor)
 
             Rectangle()
-                .background(Asset.Colors.textFieldBackground.swiftUIColor)
+                .foregroundStyle(Asset.Colors.textFieldBackground.swiftUIColor)
                 .cornerRadius(8)
                 .frame(height: isMultiline ? 150 : 50)
                 .overlay {
@@ -81,4 +81,12 @@ public struct CustomTextField: View {
             isSecured = hidableUserInput
         }
     }
+}
+
+#Preview {
+    CustomTextField(
+        title: "Title",
+        placeholderText: "Placeholder",
+        userInput: .constant("input")
+    )
 }
