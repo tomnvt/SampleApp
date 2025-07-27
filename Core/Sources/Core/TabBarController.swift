@@ -4,13 +4,22 @@ import UIKit
 struct Tab: Hashable {
     let index: Int
     let title: String
+    let imageName: String
 
     static var tab1: Tab {
-        Tab(index: 0, title: "Tab1")
+        Tab(
+            index: 0,
+            title: "List",
+            imageName: "list.clipboard"
+        )
     }
 
     static var tab2: Tab {
-        Tab(index: 1, title: "Tab2")
+        Tab(
+            index: 1,
+            title: "User",
+            imageName: "person.circle"
+        )
     }
 
     static var allTabs: [Tab] {
@@ -52,7 +61,7 @@ class TabBarController: UITabBarController {
             .sorted { $0.index < $1.index }
             .compactMap { tab in
                 guard let navigationController = tabsToNavigationControllers[tab] else { return nil }
-                let tabBarItem = UITabBarItem(title: tab.title, image: nil, tag: tab.index)
+                let tabBarItem = UITabBarItem(title: tab.title, image: UIImage(systemName: tab.imageName), tag: tab.index)
                 navigationController.tabBarItem = tabBarItem
                 return navigationController
             }
