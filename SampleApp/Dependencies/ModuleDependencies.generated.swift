@@ -1,4 +1,4 @@
-// Generated using Sourcery 1.9.0 — https://github.com/krzysztofzablocki/Sourcery
+// Generated using Sourcery 2.2.7 — https://github.com/krzysztofzablocki/Sourcery
 // DO NOT EDIT
 
 import FeatureExample 
