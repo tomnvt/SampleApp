@@ -1,4 +1,4 @@
-import CommonData
+import SharedData
 import FeatureOnboarding
 import FeatureExample
 import FeatureLogin

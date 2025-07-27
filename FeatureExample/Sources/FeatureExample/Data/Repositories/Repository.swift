@@ -1,4 +1,4 @@
-import CommonData
+import SharedData
 import Foundation
 
 class Repository {

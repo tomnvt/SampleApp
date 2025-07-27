@@ -1,4 +1,4 @@
-import CommonData
+import SharedData
 import CoreData
 import XCTest
 @testable import FeatureExample

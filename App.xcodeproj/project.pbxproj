@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BB21E9D52938ACB600EDEDFA /* CommonData in Frameworks */ = {isa = PBXBuildFile; productRef = BB21E9D42938ACB600EDEDFA /* CommonData */; };
+		BB21E9D52938ACB600EDEDFA /* SharedData in Frameworks */ = {isa = PBXBuildFile; productRef = BB21E9D42938ACB600EDEDFA /* SharedData */; };
 		BB21E9D72938ACBA00EDEDFA /* Utils in Frameworks */ = {isa = PBXBuildFile; productRef = BB21E9D62938ACBA00EDEDFA /* Utils */; };
 		BB228327290843140065C980 /* FeatureExample in Frameworks */ = {isa = PBXBuildFile; productRef = BB228326290843140065C980 /* FeatureExample */; };
 		BB947E052907E16500A57B65 /* FeatureOnboarding in Frameworks */ = {isa = PBXBuildFile; productRef = BB947E042907E16500A57B65 /* FeatureOnboarding */; };
@@ -22,7 +22,7 @@
 /* Begin PBXFileReference section */
 		BB21E9D32938A46D00EDEDFA /* Utils */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Utils; sourceTree = "<group>"; };
 		BB228325290840510065C980 /* FeatureExample */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FeatureExample; sourceTree = "<group>"; };
-		BB4F0DAC2906B2D900252E50 /* CommonData */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CommonData; sourceTree = "<group>"; };
+		BB4F0DAC2906B2D900252E50 /* SharedData */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SharedData; sourceTree = "<group>"; };
 		BB4F0DAE2906B2DF00252E50 /* SharedUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SharedUI; sourceTree = "<group>"; };
 		BB60E0FB293DE4A30013A0FE /* Sourcery */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sourcery; sourceTree = "<group>"; };
 		BB6A77E52E3656270033C397 /* SharedDomain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SharedDomain; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 				BB9AC8A3292F6CB9006F8CB6 /* SharedUI in Frameworks */,
 				BB228327290843140065C980 /* FeatureExample in Frameworks */,
 				BB947E092907EF5200A57B65 /* FeatureLogin in Frameworks */,
-				BB21E9D52938ACB600EDEDFA /* CommonData in Frameworks */,
+				BB21E9D52938ACB600EDEDFA /* SharedData in Frameworks */,
 				BB9AC8A1292F6CB9006F8CB6 /* SharedDomain in Frameworks */,
 				BBD1B727296335C20013A5D7 /* FirebaseAnalytics in Frameworks */,
 			);
@@ -72,7 +72,7 @@
 			children = (
 				BBAAA7062E362714002382EC /* SampleApp */,
 				BB21E9D32938A46D00EDEDFA /* Utils */,
-				BB4F0DAC2906B2D900252E50 /* CommonData */,
+				BB4F0DAC2906B2D900252E50 /* SharedData */,
 				BB6A77E52E3656270033C397 /* SharedDomain */,
 				BB4F0DAE2906B2DF00252E50 /* SharedUI */,
 				BB947E032907E0B000A57B65 /* FeatureOnboarding */,
@@ -127,7 +127,7 @@
 				BB228326290843140065C980 /* FeatureExample */,
 				BB9AC8A0292F6CB9006F8CB6 /* SharedDomain */,
 				BB9AC8A2292F6CB9006F8CB6 /* SharedUI */,
-				BB21E9D42938ACB600EDEDFA /* CommonData */,
+				BB21E9D42938ACB600EDEDFA /* SharedData */,
 				BB21E9D62938ACBA00EDEDFA /* Utils */,
 				BBD1B726296335C20013A5D7 /* FirebaseAnalytics */,
 			);
@@ -398,9 +398,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		BB21E9D42938ACB600EDEDFA /* CommonData */ = {
+		BB21E9D42938ACB600EDEDFA /* SharedData */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = CommonData;
+			productName = SharedData;
 		};
 		BB21E9D62938ACBA00EDEDFA /* Utils */ = {
 			isa = XCSwiftPackageProductDependency;

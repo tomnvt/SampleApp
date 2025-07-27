@@ -13,7 +13,7 @@ let package = Package(
             targets: ["FeatureOnboarding"]),
     ],
     dependencies: [
-        .package(path: "../CommonData"),
+        .package(path: "../SharedData"),
         .package(path: "../SharedDomain"),
         .package(path: "../SharedUI"),
         .package(path: "../Utils"),
@@ -24,7 +24,7 @@ let package = Package(
         .target(
             name: "FeatureOnboarding",
             dependencies: [
-                "CommonData",
+                "SharedData",
                 "SharedDomain",
                 "SharedUI",
                 "Utils",

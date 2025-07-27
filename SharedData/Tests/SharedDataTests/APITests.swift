@@ -1,7 +1,7 @@
 import XCTest
-@testable import CommonData
+@testable import SharedData
 
-final class CommonDataTests: XCTestCase {
+final class SharedDataTests: XCTestCase {
     func test_WeatherAPI() async throws {
         let request = WeatherAPI.getMaxTemperature(latitude: 50.48, longitude: 16.18)
         let data = try await URLSession.shared.data(for: request.urlRequest).0

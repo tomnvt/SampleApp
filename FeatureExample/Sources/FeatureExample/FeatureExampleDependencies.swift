@@ -1,4 +1,4 @@
-import CommonData
+import SharedData
 
 // sourcery: ModuleDependencies
 public class FeatureExampleDependencies {

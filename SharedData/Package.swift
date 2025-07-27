@@ -4,12 +4,12 @@
 import PackageDescription
 
 let package = Package(
-    name: "CommonData",
+    name: "SharedData",
     platforms: [.iOS(.v15)],
     products: [
         .library(
-            name: "CommonData",
-            targets: ["CommonData"]),
+            name: "SharedData",
+            targets: ["SharedData"]),
     ],
     dependencies: [
         .package(path: "../SharedDomain"),
@@ -17,7 +17,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "CommonData",
+            name: "SharedData",
             dependencies: [
                 "SharedDomain",
                 "KeychainAccess",
@@ -25,7 +25,7 @@ let package = Package(
             resources: [.process("Resources/")]
         ),
         .testTarget(
-            name: "CommonDataTests",
-            dependencies: ["CommonData"]),
+            name: "SharedDataTests",
+            dependencies: ["SharedData"]),
     ]
 )

@@ -1,4 +1,4 @@
-import CommonData
+import SharedData
 import SharedDomain
 
 class AppDependencies {
